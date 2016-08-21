@@ -1,0 +1,32 @@
+go to the directory which you want to make repository
+git init -> initialise repository
+git status -> see the status of rep
+git add "filename" ->add file to staging area, file is not yet added to rep
+git add -A -> Adds all files of the folder into the rep
+git commit -m "message" ->commit all the files in the staging area with a text message to the rep(only committed files can be sent to online repo)
+-- git add '*.txt' -> add all files of the same type '.txt'
+git log -> shows a log of all the commitments we have made so far
+git remote add origin "URL for online repo" -> to push our local repo to github server( basically tell, where our online repo is)(make a connection kinda)
+git push -u origin master -> origin is the default online repo, master is our local repo , -u remembers that so next time we just have to write 'git push'
+(origin is a keyword for the online github remote, may chage depending on where we have to push)(master is the main pranch in our local repo, if we create another branch in our project, we would use different keyword) -> the command pushes our committed files to the online repo
+git pull origin master -> pull files to local repo from online repo
+git diff HEAD-> difference in the newly pulled files , HEAD is a pointer for most recently committed files (use any other file name insted of head)
+git reset file_path -> remove a file from the staging area, like we are not ready to commit it at the moment
+git checkout --file -> change a file back to how it was before last commit (?)
+git branch name -> create a branch 
+git branch -> see all the branches available
+git checkout branch_name -> to switch between branches
+git rm 'file name' ->remove the file from the disk as well as the staging area
+*** Use any command, any command add, rm etc. if you dont commit to the changes they will ncd Dot be reflected online when push is used and they will alno not take place in the local repo. commit is loke a save command, like creating a checkpoint. if we dont commit no other command is reflected***
+git merge branch_name -> to merge the branch to the master .master will now become same as the branch.
+git branch -d branch_name -> to delete a branch
+
+git push origin :branch_name --> deleting branch branch_name
+
+
+
+
+
+
+
+
